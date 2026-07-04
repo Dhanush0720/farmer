@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Agri-Centric Theme Colors */
+  --color-agri-green-light: #e8f5e9;
+  --color-agri-green-medium: #2e7d32;
+  --color-agri-green-dark: #1b5e20;
+  --color-agri-green: #2e7d32;
+
+  --color-agri-soil-light: #f5f5f5;
+  --color-agri-soil-medium: #8d6e63;
+  --color-agri-soil-dark: #4e342e;
+  --color-agri-soil: #4e342e;
+
+  --color-agri-amber-light: #fff8e1;
+  --color-agri-amber-medium: #ffb300;
+  --color-agri-amber-dark: #ff8f00;
+  --color-agri-amber: #ffb300;
+
+  /* Font Families */
+  --font-sans: 'Outfit', 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  background-color: #f6f8f5; /* Clean warm tinted surface */
+  color: #1a2d1b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom classes for micro-animations and smooth scroll */
+.transition-card {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-card:hover {
+  transform: translateY(-2px);
+}
+
+.tap-effect:active {
+  transform: scale(0.97);
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c2d6c4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8eaf91;
+}

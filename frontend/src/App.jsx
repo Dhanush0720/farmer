@@ -10,6 +10,7 @@ import CropListings from './pages/CropListings';
 import FertilizerTool from './pages/FertilizerTool';
 import Messages from './pages/Messages';
 import ProtectedRoute from './components/ProtectedRoute';
+import ChatbotWidget from './components/ChatbotWidget';
 import { AuthProvider } from './context/AuthContext';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -21,6 +22,9 @@ function App() {
           <div className="min-h-screen bg-[#f5f8f5]/40 flex flex-col font-sans">
             {/* Header Navigation */}
             <Navbar />
+
+            {/* Floating Chatbot Assistant */}
+            <ChatbotWidget />
 
             {/* Main Application Surface */}
             <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
